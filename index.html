@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="fixed">
+        <div class="container">
+            <a class="navbar-brand p-0" href="#">
+                <img src="asset/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbarNav collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Club Buzz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wine & Dine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Banquet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">What's New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Swimming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Social</a>
+                    </li>
+                </ul>
+                <div class="navbar-text btn-search">
+                    <a><i class="fa-solid fa-magnifying-glass text-white cursor-pointer"></i></a>
+                    <div class="search-field" style="display: none;">
+                        <input type="text">
+                        <i class="fa-solid fa-magnifying-glass fa-xl text-primary cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-toggle position-relative bg-warning text-center py-1">
+                <div class="show-menu">
+                    <span>MENU</span>
+                    <a class="button-menu-toggle arrow-circle bg-warning d-flex align-items-end justify-content-center pb-1"
+                        data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarNav"
+                        href="#navbarNav">
+                        <i class="fas fa-chevron-down text-black"></i>
+                    </a>
+                </div>
+                <a class="button-menu-toggle hide-menu d-flex align-items-center justify-content-center d-none"
+                    data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarNav"
+                    href="#navbarNav">
+                    <i class="fas fa-chevron-up text-white fa-2xs"></i>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <header>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item cover" style="background-image: url('asset/home-2.png');">
+
+            </div>
+            <div class="item item-video cover">
+                <video muted>
+                    <source src="asset/stock-footage-brunette-woman-swimming-underwater-in-slow-motion.mp4">
+                </video>
+            </div>
+            <div class="item cover" style="background-image: url('asset/home-1.png');">
+
+            </div>
+            <div class="item item-video cover">
+                <video muted>
+                    <source src="asset/stock-footage-two-asian-boys-racing-with-their-father-in-a-pool.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="content">
+            <p class="h5 text-white">The Premier Family Club</p>
+            <p class="text-white">Where people make the difference</p>
+        </div>
+    </header>
+    <section>
+        <div class="container pt-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Featured</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Events</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane"
+                        aria-selected="false">Publication</button>
+                </li>
+            </ul>
+            <div class="tab-content pt-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row ">
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/316/156 " class="img-fluid" alt="pic">
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">SALE ORDINARY MEMBERSHIP AT THE CLUB</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Purchase of membership directly from
+                                        the club</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/237/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">SOCIAL DANCE NIGHT
+                                        BLACK & WHITE NIGHT</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Come out and dance to a live band
+                                        and have the time of your life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/239/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">21ST SSC OPEN
+                                        INVITATIONAL MIDGET MEET 2015</h5>
+                                    <hr>
+                                    <p class="card-text text-center">12 & 13 SEPTEMBER</p>
+                                    <p class="card-text text-center">Venue : Competition Pool</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/219/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">
+                                        ANNUAL 9-BALL
+                                        POOL COMPETITION</h5>
+                                    <hr>
+                                    <p class="card-text">Time : 7pm (weekdays)</p>
+                                    <p class="card-text">Venue : Billiards Room (Bowling Centre)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/233/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">22ND TABLE TENNIS
+                                        OPEN CHAMPIONSHIP</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Men's Singles / Doubles.</p>
+                                    <p class="card-text text-center">Ladies' Singles / Doubles</p>
+                                    <p class="card-text text-center">Mixed Doubles .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/139/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Weekend Bazaar
+                                        EVERY SATURDAY</h5>
+                                    <hr>
+                                    <p class="card-text">Time : 10am to 10pm</p>
+                                    <p class="card-text">Venue : The Atrium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="row ">
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/316/156 " class="img-fluid" alt="pic">
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">SALE ORDINARY MEMBERSHIP AT THE CLUB</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Purchase of membership directly from
+                                        the club</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/237/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">SOCIAL DANCE NIGHT
+                                        BLACK & WHITE NIGHT</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Come out and dance to a live band
+                                        and have the time of your life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/239/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">21ST SSC OPEN
+                                        INVITATIONAL MIDGET MEET 2015</h5>
+                                    <hr>
+                                    <p class="card-text text-center">12 & 13 SEPTEMBER</p>
+                                    <p class="card-text text-center">Venue : Competition Pool</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/219/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">
+                                        ANNUAL 9-BALL
+                                        POOL COMPETITION</h5>
+                                    <hr>
+                                    <p class="card-text">Time : 7pm (weekdays)</p>
+                                    <p class="card-text">Venue : Billiards Room (Bowling Centre)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/233/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">22ND TABLE TENNIS
+                                        OPEN CHAMPIONSHIP</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Men's Singles / Doubles.</p>
+                                    <p class="card-text text-center">Ladies' Singles / Doubles</p>
+                                    <p class="card-text text-center">Mixed Doubles .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/139/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Weekend Bazaar
+                                        EVERY SATURDAY</h5>
+                                    <hr>
+                                    <p class="card-text">Time : 10am to 10pm</p>
+                                    <p class="card-text">Venue : The Atrium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="row ">
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/316/156 " class="img-fluid" alt="pic">
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">SALE ORDINARY MEMBERSHIP AT THE CLUB</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Purchase of membership directly from
+                                        the club</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/237/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">SOCIAL DANCE NIGHT
+                                        BLACK & WHITE NIGHT</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Come out and dance to a live band
+                                        and have the time of your life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/239/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">21ST SSC OPEN
+                                        INVITATIONAL MIDGET MEET 2015</h5>
+                                    <hr>
+                                    <p class="card-text text-center">12 & 13 SEPTEMBER</p>
+                                    <p class="card-text text-center">Venue : Competition Pool</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/219/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">
+                                        ANNUAL 9-BALL
+                                        POOL COMPETITION</h5>
+                                    <hr>
+                                    <p class="card-text">Time : 7pm (weekdays)</p>
+                                    <p class="card-text">Venue : Billiards Room (Bowling Centre)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/233/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">22ND TABLE TENNIS
+                                        OPEN CHAMPIONSHIP</h5>
+                                    <hr>
+                                    <p class="card-text text-center">Men's Singles / Doubles.</p>
+                                    <p class="card-text text-center">Ladies' Singles / Doubles</p>
+                                    <p class="card-text text-center">Mixed Doubles .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12   col-md-6 col-lg-4 ">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://picsum.photos/id/139/316/156" class="img-fluid" alt="pic">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Weekend Bazaar
+                                        EVERY SATURDAY</h5>
+                                    <hr>
+                                    <p class="card-text">Time : 10am to 10pm</p>
+                                    <p class="card-text">Venue : The Atrium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="news-header">
+                    <div>UPCOMING NEWS</div>
+                    <div>Sale of Ordinary Membership at the Club</div>
+                </div>
+                <div class="news-body">
+                    <div class="row" id="news-items">
+                        <div class="col-12 col-md-6 mt-3">
+                            <div class="news-item">
+                                <p class="text-muted mb-2">15 September 2015</p>
+                                <h2>THE PALMS OPEN FOR BREAKFAST</h2>
+                                <p>Please be informed that due to the haze, breakfast will be served at The Palms from
+                                    <strong>8.00am to 10.45am</strong>. Members are to observe the dress code required
+                                    at
+                                    the Palms.</p>
+                                <p>Dress Code at The Palms</p>
+                                <p>Soiled or wet clothing and swimwear are not allowed</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3">
+                            <div class="news-item">
+                                <p class="text-muted mb-2">10 September 2015</p>
+                                <h2>PRO SHOP OPERATION HOURS</h2>
+                                <p>Please be informed of the Pro Shop's new operating hours</p>
+                                <p>Monday - Wednesday & Friday : 3pm - 8pm</p>
+                                <p>Saturday & Sunday : 12pm - 8pm</p>
+                                <p>Thursday : CLOSED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="read-more pt-3 text-center">
+                <p class="" id="btn-readmore">Read More <strong class="fw-bolder">+</strong></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4 d-md-flex justify-content-around d-lg-block">
+                    <div class="information mb-4">
+                        <div class="footer-logo me-3">
+                            <img src="asset/footer-logo.png" alt="logo">
+                        </div>
+                        <div class="footer-address">
+                            <div>
+                                <p>45 Tanjong Rhu Road</p>
+                                <p>Singapore 436899</p>
+                            </div>
+                            <div>
+                                <p>Tel : (65) 6342 3600</p>
+                                <p>Fax : (65) 6344 4476</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7952260363622!2d103.87841057423582!3d1.2975621986901178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19f494a9ec2b%3A0xd48cae12f92df2a8!2s45%20Tg%20Rhu%20Rd%2C%20Singapore%20436899!5e0!3m2!1sen!2sid!4v1672322277830!5m2!1sen!2sid"
+                            style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <ul class="list-link">
+                                <li class="list-item">Home</li>
+                                <li class="list-item">Abous Us</li>
+                                <li class="list-item">Brief History</li>
+                                <li class="list-item">Club Milestones</li>
+                                <li class="list-item">Swimming Milestones</li>
+                                <li class="list-item">Management Committee & Club Management</li>
+                                <li class="list-item">Club Directory</li>
+                                <li class="list-item">Club Buzz</li>
+                                <li class="list-item">Facilities</li>
+                                <li class="list-item">Sport</li>
+                                <li class="list-item">General</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <ul class="list-link">
+                                <li class="list-item">Membership</li>
+                                <li class="list-item">Membership Schemes</li>
+                                <li class="list-item">Reciprocal Schemes</li>
+                                <li class="list-item">Golfing Membership</li>
+                                <li class="list-item">Transfer Procedurs & FAQ</li>
+                                <li class="list-item">Find Out More</li>
+                                <li class="list-item">Banquet</li>
+                                <li class="list-item">Photo Gallery</li>
+                                <li class="list-item">Sport</li>
+                                <li class="list-item">Swimming</li>
+                                <li class="list-item">Social</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <ul class="list-link">
+                                <li class="list-item">Wine And Dine</li>
+                                <li class="list-item">Jakson Miller</li>
+                                <li class="list-item">The Palms</li>
+                                <li class="list-item">Jade Phoenix</li>
+                                <li class="list-item">Cabana</li>
+                                <li class="list-item">Le Petit Tressor</li>
+                                <li class="list-item">The Delicatesen</li>
+                                <li class="list-item">Fountain Bar</li>
+                                <li class="list-item">D'Tanjong</li>
+                                <li class="list-item">D'Sport</li>
+                                <li class="list-item">D'Galaxy</li>
+                                <li class="list-item">Straits of Malacca</li>
+                                <li class="list-item">Straits of Malacca</li>
+                                <li class="list-item">What's New</li>
+                                <li class="list-item">Sport</li>
+                                <li class="list-item">Swimming</li>
+                                <li class="list-item">Social</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="email-subscribe">
+                <h5>Email Newslatter</h5>
+                <p>Subscribe to receive news in your inbox</p>
+                <input type="email" class="form-control input-email-subscribe" placeholder="Email Address">
+                <div class="d-grid mx-auto">
+                    <button class="btn btn-subscribe" type="button">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="text-white">© Copyright 2015. Singapore Swimming Club. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="owl.carousel.js"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
